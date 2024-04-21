@@ -174,26 +174,36 @@ section.inicio{
         }
     }
 
+}
 
+.info-img{
+    position: relative;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.466);
+    animation: imgg 5s infinite;
 
+    img{
+        position: absolute;
+        height: 700px;
+        right: -100px;        
+    }
+}
 
-    .info-img{
-        position: relative;
-        height: 500px;
-        width: 500px;
-        border-radius: 50%;
-        overflow: hidden;
-        box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.466);
-        
-
-        img{
-            position: absolute;
-            height: 700px;
-            right: -100px;
-        }
+@keyframes imgg{
+    0%{
+        transform: translateY(0);
     }
 
+    50%{
+        transform: translateY(-22px);
+    }
 
+    100%{
+        transform: translateY(0);
+    }
 }
 
 
