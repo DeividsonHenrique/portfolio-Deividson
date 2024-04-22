@@ -8,6 +8,10 @@
 
     <!-- Link do fontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!--Link do aquivo JavaScript-->
+    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -30,7 +34,7 @@
             <div class="info">
                 <span class="funcao">Desenvolvedor Front End</span>
                 <h1>Deividson Henrique</h1>
-                <p>Sou um desenvolvedor front, criador de templates, ideias responsivas trabalhando e trabalhando comprojetos que faço quases todos os dias para sempre manter a prática. </p>
+                <p>Sou um desenvolvedor front, criador de templates, ideias responsivas e trabalhando com projetos que faço quases todos os dias para sempre manter a prática. </p>
                 <div class="info-contact">
                     <a href="#" class="if1"><i class="fa-solid fa-file"></i>Meu curriculo</a>
                     <a href="#" class="if2"><i class="fa-brands fa-linkedin"></i>Meu LinkedIn</a>
@@ -47,10 +51,9 @@
         <section class="sobre"> <!--  inicio da section 2  -->
 
             <h2>Sobre mim</h2>
-            <p>Hoje tenho tenho 23 anos, más sempre fui uma pessoa ligada a tecnologia, desde os meus 9 anos la em 2010 eu que concertava alguns problemas ná epoca seja software, alguns bugs, problemas em hardware e até mesmo instalar um windows que pra epoca não era todo mundo que fazia.</p>
-            <p>Sempre fui uma pessoa ligada a criação seja em imagens, videos que atualmente é algo que eu faço ainda, projetos e ideias. E isso me fez escolher o <strong>Front End</strong> que gosto tanto hoje em dia e aprendo cada dia mais. estou nesse foco a mais de um ano após me formar em <strong>Sistemas de informação</strong> e esse é meu portifólio que eu criei com base nos meus conhecimentos aprendidos até a data de publicação dele</p>
-            <p>Por mais que seja uma area que gosto bastante eu não descartos todas a outras, pois eu me interesso pelas outras areas como back end e até cyber security, más não da pra aprender tudo de uma vez, mas sempre curtir aprender novas ferramentas e trabalhos.</p>
-
+            <p>Hoje tenho tenho 23 anos, más sempre fui uma pessoa ligada a tecnologia, desde os meus 9 anos la em 2010 eu que concertava alguns problemas ná epoca seja software, alguns bugs, problemas em hardware e até mesmo instalar um windows que pra epoca não era todo mundo que fazia.
+            Sempre fui uma pessoa ligada a criação seja em imagens, videos que atualmente é algo que eu faço ainda, projetos e ideias. E isso me fez escolher o <strong>Front End</strong> que gosto tanto hoje em dia e aprendo cada dia mais. estou nesse foco a mais de um ano após me formar em <strong>Sistemas de informação</strong> e esse é meu portifólio que eu criei com base nos meus conhecimentos aprendidos até a data de publicação dele
+            Por mais que seja uma area que gosto bastante eu não descartos todas a outras, pois eu me interesso pelas outras areas como back end e até cyber security, más não da pra aprender tudo de uma vez, mas sempre curtir aprender novas ferramentas e trabalhos.</p>
         </section> <!--  fim da section 2  -->
 
 
@@ -60,25 +63,50 @@
             <h2>Meus projetos</h2>
             <p>Possuo alguns projetos publicados, pois foram os que eu dei continuidade até o fim.</p>
 
-            <div class="card">
-                <div class="card-img"></div>
-                <span>Projeto-1</span>
+            <div class="projetos-cards" id="cards-container">
+                <div class="card">
+                    <div class="card-img"></div>
+                    <span>Projeto-1</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-img"></div>
+                    <span>Projeto-2</span>
+                </div>
+                
+                <div class="card">
+                    <div class="card-img"></div>
+                    <span>Projeto-3</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-img"></div>
+                    <span>Projeto-4</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-img"></div>
+                    <span>Projeto-5</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-img"></div>
+                    <span>Projeto-6</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-img"></div>
+                    <span>Projeto-7</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-img"></div>
+                    <span>Projeto-8</span>
+                </div>
+
             </div>
 
-            <div class="card">
-                <div class="card-img"></div>
-                <span>Projeto-2</span>
-            </div>
-
-            <div class="card">
-                <div class="card-img"></div>
-                <span>Projeto-3</span>
-            </div>
-
-            <div class="card">
-                <div class="card-img"></div>
-                <span>Projeto-4</span>
-            </div>
+            <div class="btn1"><button id="carregar-mais" class="btn">Carregar mais</button></div>
 
         </section> <!--  fim da section 3  -->
 
@@ -88,29 +116,31 @@
 
             <h2>Algumas Habilidades e conhecimentos que possuo.</h2>
 
-            <div class="card-habilidades">
-                <div class="card-img-habilidades"></div>
-                <span>Projeto-1</span>
-            </div>
-
-            <div class="card-habilidades">
-                <div class="card-img-habilidades"></div>
-                <span>Projeto-2</span>
-            </div>
-
-            <div class="card-habilidades">
-                <div class="card-img-habilidades"></div>
-                <span>Projeto-3</span>
-            </div>
-
-            <div class="card-habilidades">
-                <div class="card-img-habilidades"></div>
-                <span>Projeto-4</span>
-            </div>
-
-            <div class="card-habilidades">
-                <div class="card-img-habilidades"></div>
-                <span>Projeto-5</span>
+            <div class="infos-habilidades">
+                <div class="card-habilidades">
+                    <div class="card-img-habilidades"></div>
+                    <span>Projeto-1</span>
+                </div>
+                <div class="card-habilidades">
+                    <div class="card-img-habilidades"></div>
+                    <span>Projeto-2</span>
+                </div>
+                <div class="card-habilidades">
+                    <div class="card-img-habilidades"></div>
+                    <span>Projeto-3</span>
+                </div>
+                <div class="card-habilidades">
+                    <div class="card-img-habilidades"></div>
+                    <span>Projeto-4</span>
+                </div>
+                <div class="card-habilidades">
+                    <div class="card-img-habilidades"></div>
+                    <span>Projeto-5</span>
+                </div>
+                <div class="card-habilidades">
+                    <div class="card-img-habilidades"></div>
+                    <span>Projeto-6</span>
+                </div>
             </div>
             
         </section> <!--  fim da section 4  -->
