@@ -36,6 +36,7 @@ header{
     z-index: 1;
     display: flex;
     justify-content: space-evenly;
+    background-color: #181818;
     backdrop-filter: blur(8px);
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.300);
 }
@@ -186,6 +187,7 @@ section.inicio{
     overflow: hidden;
     box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.466);
     animation: imgg 5s infinite;
+    background-color: #333;
 
     img{
         position: absolute;
@@ -262,7 +264,7 @@ section.projetos{
     }
 
 
-    p{
+    p.mp{
         font-family: var(--font1);
         font-weight: 600;
         font-size: 1.2em;
@@ -311,48 +313,82 @@ button:hover{
 
 .projetos-cards{
     position: relative;
-    height: 650px;
+    height: 420px;
     overflow: hidden;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;   
+    grid-template-columns: 0fr 0fr 0fr;   
     justify-items: center;
+    justify-content: center;
+    column-gap: 30px;
     transition: height .5s ease-in-out;
+}
+
+.card{
+    position: relative;
+    box-shadow: 0px 0px 10px 2px var(--color3);
+    height: 400px;
+    width: 450px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0px 30px 0px;
+    transition: .3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     
 
-
-    .card{
-        position: relative;
-        box-shadow: 0px 0px 10px 2px var(--color3);
-        height: 500px;
-        width: 350px;
-        border-radius: 10px;
-        overflow: hidden;
-        margin: 10px 0px 30px 0px;
-
-
-        .card-img{
-            background-color: var(--color5);
-            width: 100%;
-            height: 80%;
-        }
-
-
-        span{
-            position: absolute;
-            right: 50%;
-            transform: translateX(50%);
-            margin: 10px 0px;
-            font-size: 1.2em;
-            font-family: var(--font1);
-        }
+    span{
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        margin: 10px 0px;
+        font-size: 1.2em;
+        font-family: var(--font1);
     }
 }
 
-.projetos-cards::before{
+.overlay{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(transparent, #1c1c1c);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 40px;
+    text-align: center;
+    font-size: 1.4em;
+    transition: height .4s ease-in-out;
+}
+
+.card:hover .overlay{
+    height: 100%;
+    backdrop-filter: blur(5px);   
+}
+
+.card img{
+    height: 100%;
+    transition: .3s ease-in-out;
+}
+
+.card:hover img{
+    transform: scale(1.1);
+}
+
+
+
+
+
+/* .projetos-cards::before{
     position: absolute;
     content: "";
-    width: 98%;
-    height: 250px;
+    width: 94%;
+    height: 0px;
     bottom: 0;
     background: linear-gradient(transparent, transparent, var(--color5));
     z-index: 1;
@@ -362,10 +398,10 @@ button:hover{
 
 .projetos-cards.active::before{
     visibility: hidden;
-}
+} */
 
 .projetos-cards.active{
-    height: 1060px;    
+    height: 880px;    
 }
 
 
@@ -395,10 +431,11 @@ section.habilidades{
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 0fr 0fr 0fr;
     row-gap: 50px;
+    column-gap: 50px;
     align-content: center;
-    justify-items: center;
+    justify-content: center;
 }
 
 .card-habilidades{
@@ -407,7 +444,7 @@ section.habilidades{
     flex-direction: column;
     border: 1px solid white;
     height: 300px;
-    width: 450px;
+    width: 400px;
     border-radius: 10px;
     overflow: hidden;
 
@@ -421,8 +458,17 @@ section.habilidades{
 
 .card-img-habilidades{
     width: 100%;
-    height: 60%;
-    background-color: var(--color5);     
+    height: 50%;
+    background-color: var(--color5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    img{
+        height: 130px;
+        
+    }
 }
 
 
@@ -430,15 +476,94 @@ section.habilidades{
 /* -------------------------Seção contatos-------------------- */
 
 section.contato{
-    height: 100vh;
-    background-color: black;
+    height: 90vh;
     color: white;
-    padding-top: 100px;
+    padding-top: 150px;
 
 
     h2{
         font-size: 2.5em;
         font-family: var(--font2);
         margin-bottom: 1em;
+    }
+}
+
+div.contact{
+    width: 100%;
+    height: 400px;
+    box-shadow: 0px 0px 15px 3px var(--color5);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-content: space-evenly;
+
+    a{
+        position: relative;
+        color: white;
+        font-size: 2em;
+        font-family: var(--font2);
+        text-decoration: none;
+        font-weight: 500;
+        transition: .3s ease-in-out;
+        
+        i{
+            margin-right: 15px;
+            color: blue;
+            background-color: var(--color3);
+            padding: 5px;
+        }
+
+    }
+
+    a::before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to left, aqua, transparent);
+        bottom: -3px;
+        transform-origin: left;
+        transform: scaleX(0);
+        transition: .3s ease-in-out;
+    }
+
+    a:hover, a:hover::before{
+        color: aqua;
+        transform: scaleX(1);
+    }
+}
+
+
+
+/* -------------------------Seção rodapé-------------------- */
+
+footer{
+    height: 15vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div{
+        color: white;
+        font-size: 1.3em;
+        font-family: var(--font2);
+        font-weight: 500;
+        text-transform: uppercase;
+
+
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: 300;
+            text-transform: none;
+            transition: .3s;
+        }
+
+        a:hover{
+            font-weight: 500;
+            color: gray;
+        }
     }
 }
