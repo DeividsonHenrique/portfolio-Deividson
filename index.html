@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio - Deividson</title>
+
+    <!-- estilo CSS Geral -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Estilo CSS responsivo -->
+    <link rel="stylesheet" href="responsive.css">
 
     <!-- Link do fontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
-    <!--Link do aquivo JavaScript-->
-    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -49,17 +51,17 @@
         </section> <!--  fim da section 1 (inicio) -->
 
 
-        <section class="sobre" id="sobre"> <!--  inicio da section 2 (sobre)  -->
+        <section class="sobre hidden" id="sobre"> <!--  inicio da section 2 (sobre)  -->
 
             <h2>Sobre mim</h2>
             <p>Hoje tenho tenho 23 anos, más sempre fui uma pessoa ligada a tecnologia, desde os meus 9 anos la em 2010 eu que concertava alguns problemas ná epoca seja software, alguns bugs, problemas em hardware e até mesmo instalar um windows que pra epoca não era todo mundo que fazia.
-            Sempre fui uma pessoa ligada a criação seja em imagens, videos que atualmente é algo que eu faço ainda, projetos e ideias. E isso me fez escolher o <strong onclick="frontEnd()">Front End</strong> que gosto tanto hoje em dia e aprendo cada dia mais. estou nesse foco a mais de um ano após me formar em <strong onclick="si()">Sistemas de informação</strong> e esse é meu portifólio que eu criei com base nos meus conhecimentos aprendidos até a data de publicação dele
+            Sempre fui uma pessoa ligada a criação seja em imagens, videos que atualmente é algo que eu faço ainda, projetos e ideias. E isso me fez escolher o <strong onclick="frontEnd()"><abbr title="Clique e veja mais sobre front end">Front End</abbr></strong> que gosto tanto hoje em dia e aprendo cada dia mais. estou nesse foco a mais de um ano após me formar em <strong onclick="si()"><abbr title="Clique e veja mais sobre Sistemas de Informação">Sistemas de informação</abbr></strong> e esse é meu portifólio que eu criei com base nos meus conhecimentos aprendidos até a data de publicação dele
             Por mais que seja uma area que gosto bastante eu não descartos todas a outras, pois eu me interesso pelas outras areas como back end e até cyber security, más não da pra aprender tudo de uma vez, mas sempre curtir aprender novas ferramentas e trabalhos.</p>
         </section> <!--  fim da section 2  (sobre) -->
 
 
 
-        <section class="projetos" id="projetos"> <!--  inicio da section 3 (projetos)  -->
+        <section class="projetos hidden" id="projetos"> <!--  inicio da section 3 (projetos)  -->
 
             <div class="descricao">
                 <h2>Meus projetos</h2>
@@ -199,5 +201,24 @@
     <footer> <!--  inicio do footer  -->
         <div><a href="https://github.com/DeividsonHenrique/portfolio-Deividson" target="_blank">Deividson Henrique</a> - Abril 2024</div>
     </footer> <!--  fim do footer --> 
+
+
+    <i class="fa-solid fa-bars" onclick="mostrarMenu()"></i>
+    <div class="menu-list">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!--Link do aquivo JavaScript-->
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </body>
 </html>

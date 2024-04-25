@@ -1,0 +1,571 @@
+/* ---------------------------- devices with 1024px between 1200px ---------------------- */
+@media screen and (min-width: 900px) and (max-width: 1023.9px) {
+
+    /* ------------------------- inicio do Header -------------------- */
+
+    .logo{
+        width: 20%;
+
+        a{
+            font-size: 1.2em;
+        }
+    }
+
+    .menu-area-fixo{
+        width: 60%;
+
+        ul li a{
+            font-size: 1.1em;
+        }
+    }
+
+
+    /* ------------------------- Main -------------------- */
+
+
+    main{
+        width: 90%;
+    }
+
+
+    /* ------------------------- Seção inicio -------------------- */
+
+    section.inicio{
+        height: 80vh;
+        align-items: end;
+        justify-content: space-between;
+    }
+
+    .info{
+
+        span.funcao{
+            font-size: .9em;
+        }
+        
+        h1{
+            font-size: 2.3em;
+        }
+
+        p{
+            font-size: 1.1em;
+        }
+    }
+
+    .info-contact{
+        justify-content: center;
+        width: 105%;
+
+        a{
+            font-size: .9em;
+            
+        }
+
+    }
+
+
+
+    .info-img{
+        width: 280px;
+        height: 280px;
+
+        img{
+            height: 500px;
+        }
+    }
+
+    /* -------------------------Seção sobre-------------------- */
+
+    section.sobre{
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+
+        h2{
+            font-size: 2.4em;
+            margin-bottom: 30px;
+        }
+
+        p{
+            font-size: 1.21em;
+            columns: 2;
+            text-align: justify;
+        }
+    }
+
+    /* -------------------------Seção projetos-------------------- */
+
+
+    .projetos-cards.active{
+        height: 580px;    
+    }
+
+    .descricao{
+
+        h2{
+            font-size: 2.4em;
+            margin-top: 50px;
+        }
+
+        p{
+            font-size: 1em;
+        }
+    }
+
+    .projetos-cards{
+        height: 280px;
+        width: 100%;
+        column-gap: 10px;
+    }
+
+    .card{
+        width: 260px;
+        height: 260px;
+    }
+
+    .overlay{
+        font-size: 1em;
+
+        h3{
+            margin-bottom: 10px;
+        }
+
+        p{
+            margin-bottom: 20px;
+        }
+    }
+
+    button{
+        padding: 5px 10px;
+        font-size: 1em;
+    }
+
+
+    /* ------------------------- Seção Habilidades -------------------- */
+
+
+    section.habilidades{
+
+        h2{
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+    }
+
+    .infos-habilidades{
+        row-gap: 30px;
+        column-gap: 10px;
+    }
+
+    .card-habilidades{
+        width: 270px;
+        height: 250px;
+
+        span{
+            font-size: 1em;
+        }
+    }
+
+    .card-img-habilidades{
+        img{
+            height: 60px;
+        }
+    }
+
+    .adobe img{
+        margin: 0px 10px;
+    }
+
+    /* ------------------------- Seção contatos -------------------- */
+
+    section.contato{
+        height: 75vh;
+        padding-top: 100px;
+
+        h2{
+            font-size: 2em;
+        }
+        
+
+        div.contact{
+            width: 80%;
+        }
+    }
+
+    /* ------------------------- Seção rodapé -------------------- */
+
+    footer{
+        width: 100vw;
+        div{
+            font-size: 1em;
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+/* ---------------------------- devices with 1024px between 1200px --------------------- */
+@media screen and (min-width: 1024px) and (max-width: 1199.8px) {
+
+    /* ------------------------- inicio do Header -------------------- */
+
+    .logo{
+        width: 20%;
+
+        a{
+            font-size: 1.5em;
+        }
+    }
+
+    .menu-area-fixo{
+        width: 60%;
+
+        ul li a{
+            font-size: 1.2em;
+        }
+    }
+
+
+    /* ------------------------- Main -------------------- */
+
+
+    main{
+        width: 90%;
+    }
+
+
+    /* ------------------------- Seção inicio -------------------- */
+
+    section.inicio{
+        height: 80vh;
+        align-items: end;
+    }
+
+    .info{
+
+        span.funcao{
+            font-size: .9em;
+        }
+        
+        h1{
+            font-size: 2.4em;
+        }
+
+        p{
+            font-size: 1.1em;
+        }
+    }
+
+    .info-contact{
+        justify-content: start;
+
+        a{
+            font-size: 1em;
+        }
+    }
+
+
+    .info-img{
+        width: 300px;
+        height: 300px;
+
+        img{
+            height: 550px;
+        }
+    }
+
+    /* -------------------------Seção sobre-------------------- */
+
+    section.sobre{
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+
+        h2{
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        p{
+            font-size: 1.23em;
+            columns: 2;
+            text-align: justify;
+        }
+    }
+
+    /* -------------------------Seção projetos-------------------- */
+
+
+    .projetos-cards.active{
+        height: 580px;    
+    }
+
+    .descricao{
+
+        h2{
+            font-size: 2.5em;
+            margin-top: 50px;
+        }
+
+        p{
+            font-size: 1em;
+        }
+    }
+
+    .projetos-cards{
+        height: 280px;
+        width: 100%;
+    }
+
+    .card{
+        width: 280px;
+        height: 250px;
+    }
+
+    .overlay{
+        font-size: 1em;
+
+        h3{
+            margin-bottom: 10px;
+        }
+
+        p{
+            margin-bottom: 20px;
+        }
+    }
+
+    button{
+        padding: 5px 10px;
+        font-size: 1em;
+    }
+
+
+    /* ------------------------- Seção Habilidades -------------------- */
+
+
+    section.habilidades{
+
+        h2{
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+    }
+
+    .card-habilidades{
+        width: 300px;
+        height: 250px;
+
+        span{
+            font-size: 1.1em;
+        }
+    }
+
+    .card-img-habilidades{
+        img{
+            height: 70px;
+        }
+    }
+
+    .adobe img{
+        margin: 0px 10px;
+    }
+
+    /* ------------------------- Seção contatos -------------------- */
+
+    section.contato{
+        height: 75vh;
+        padding-top: 100px;
+
+        h2{
+            font-size: 2em;
+        }
+        
+
+        div.contact{
+            width: 80%;
+        }
+    }
+
+    /* ------------------------- Seção rodapé -------------------- */
+
+    footer{
+        width: 100vw;
+        div{
+            font-size: 1em;
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+/* ------------------------ devices with 1200px between 1450px --------------------------- */
+@media screen and (min-width: 1200px) and (max-width: 1450px) {
+
+
+/* ------------------------- inicio do Header -------------------- */
+
+    .logo{
+        width: 20%;
+    }
+
+    .menu-area-fixo{
+        width: 55%;
+    }
+
+
+    /* ------------------------- Main -------------------- */
+
+    main{
+        width: 90%;
+    }
+
+
+    /* ------------------------- Seção inicio -------------------- */
+
+    section.inicio{
+        height: 100vh;
+        align-items: center;
+    }
+
+    .info{
+
+        span.funcao{
+            font-size: 1em;
+        }
+        
+        h1{
+            font-size: 2.5em;
+        }
+
+        p{
+            font-size: 1.2em;
+        }
+    }
+
+    .info-contact{
+        justify-content: start;
+
+        a{
+            font-size: 1.1em;
+        }
+    }
+
+
+    .info-img{
+        width: 350px;
+        height: 350px;
+
+        img{
+            height: 600px;
+        }
+    }
+
+    /* -------------------------Seção sobre-------------------- */
+
+    section.sobre{
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+
+        h2{
+            font-size: 3em;
+            margin-bottom: 30px;
+        }
+
+        p{
+            font-size: 1.3em;
+            columns: 3;
+            text-align: center;
+        }
+    }
+
+    /* -------------------------Seção projetos-------------------- */
+
+
+    .projetos-cards.active{
+        height: 650px;    
+    }
+
+    .descricao{
+
+        h2{
+            font-size: 3em;
+            margin-top: 50px;
+        }
+
+        p{
+            font-size: 1em;
+        }
+    }
+
+    .projetos-cards{
+        height: 340px;
+        width: 100%;
+    }
+
+    .card{
+        width: 350px;
+        height: 300px;
+    }
+
+    .overlay{
+        font-size: 1.2em;
+    }
+
+    button{
+        padding: 10px 15px;
+    }
+
+
+    /* ------------------------- Seção Habilidades -------------------- */
+
+
+    section.habilidades{
+
+        h2{
+            font-size: 2em;
+            margin-bottom: 50px;
+        }
+    }
+
+    .card-habilidades{
+        width: 350px;
+    }
+
+    .adobe img{
+        height: 90px;
+        margin: 0px 10px;
+    }
+
+    /* ------------------------- Seção contatos -------------------- */
+
+    section.contato{
+        height: 75vh;
+        padding-top: 100px;
+
+        h2{
+            font-size: 2em;
+        }
+        
+    }
+
+    /* ------------------------- Seção rodapé -------------------- */
+
+    footer{
+
+        div{
+            font-size: 1em;
+        }
+    }
+
+}
