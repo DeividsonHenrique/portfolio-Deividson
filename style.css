@@ -27,7 +27,7 @@ body{
     background-color: #181818;
 }
 
-
+/* ------------------------- inicio do Header -------------------- */
 
 header{
     position: fixed;
@@ -36,23 +36,34 @@ header{
     z-index: 1;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     background-color: #181818;
     backdrop-filter: blur(8px);
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.300);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.300);
+    overflow: hidden;
 }
 
 .logo{
     width: 40%;
-    margin-top: 30px;
-    
+
     a{
-        font-size: 2.5em;
+        font-size: 2.2em;
         text-decoration: none;
         font-weight: 900;
-        text-align: center;
-        background: linear-gradient(to left, green, lightblue);
-        background-clip: text;
-        color: transparent;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: white;
+        transition: text-shadow .3s ease;
+        text-shadow: 0 0 10px #03bcf4,
+                     0 0 20px #03bcf4,
+                     0 0 40px #03bcf4;
+    }
+
+    a:hover{
+        text-shadow: 0 0 10px #03bcf4,
+                0 0 20px #03bcf4,
+                0 0 40px #03bcf4,
+                0 0 80px #03bcf4;
     }
     
 }
@@ -60,7 +71,9 @@ header{
 .menu-area-fixo{
     width: 40%;
     height: 100px;
-    padding-top: 40px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 
     li{
         list-style: none;
@@ -73,6 +86,11 @@ header{
             font-family: var(--font1);
             text-decoration: none;
             color: white;
+            transition: color .3s ease-in-out;
+        }
+
+        a:hover{
+            color: aqua;
         }
 
          a::before{
@@ -81,7 +99,7 @@ header{
             width: 100%;
             height: 2px;
             bottom: -3px;
-            background-color: white;
+            background-color: aqua;
             transform-origin: center;
             transform: scaleX(0);
             transition: all .3s ease-in-out;
@@ -94,7 +112,7 @@ header{
 }
 
 
-/* sobre */
+/* ------------------------- Main -------------------- */
 
 
 main{
@@ -102,101 +120,106 @@ main{
     margin: 0 auto;
 }
 
+
+/* ------------------------- Seção inicio -------------------- */
+
 section.inicio{
     height: 80vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: end;
-
-
-    .info{
-        color: white;
-        width: 50%;
-
-        .funcao{
-            font-family: var(--font2);
-            font-weight: 400;
-        }
-
-        h1{
-            font-size: 3em;
-            font-weight: 900;
-            font-family: var(--font1);
-            margin: 20px 0px;
-        }
-
-        p{
-            font-size: 1.5em;
-            font-family: var(--font2);
-            font-weight: 300;
-            margin-bottom: 40px;
-        }
-    }
-
-    .info-contact{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-
-        a{
-            position: relative;
-            color: white;
-            text-decoration: none;
-            font-size: 1.3em;
-            font-weight: 900;
-            font-family: var(--font1);
-
-
-            i{
-                margin: 0px 10px;
-                color: blue;
-                font-size: 1.2em;
-            }
-        }
-
-        .if1, .if2{
-            margin: 0px 30px;
-            padding: 10px;
-        }
-
-        a::before{
-            position: absolute;
-            width: 90%;
-            content: "";
-            height: 3px;
-            bottom: -5px;
-            right: 0;
-            background-color: white;
-            transform-origin: left;
-            transform: scaleX(0);
-            transition: all .3s ease-in-out;
-        }
-
-        a:hover::before{
-            transform: scaleX(1);
-        }
-    }
-
 }
+
+.info{
+    color: white;
+    width: 50%;
+
+    span.funcao{
+        font-family: var(--font2);
+        font-weight: 400;
+        font-size: 1.1em;
+    }
+
+    h1{
+        font-size: 3em;
+        font-weight: 900;
+        font-family: var(--font1);
+        margin: 20px 0px;
+    }
+
+    p{
+        font-size: 1.5em;
+        font-family: var(--font2);
+        font-weight: 300;
+        margin-bottom: 40px;
+    }
+}
+
+.info-contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    a{
+        position: relative;
+        color: white;
+        text-decoration: none;
+        font-size: 1.3em;
+        font-weight: 900;
+        font-family: var(--font1);
+
+
+        i{
+            margin: 0px 10px;
+            color: blue;
+            font-size: 1.2em;
+        }
+    }
+
+    .if1, .if2{
+        margin: 0px 30px;
+        padding: 10px;
+    }
+
+    a::before{
+        position: absolute;
+        width: 85%;
+        content: "";
+        height: 3px;
+        bottom: -5px;
+        right: 10px;
+        background: linear-gradient(to right , transparent, white);
+        transform-origin: left;
+        transform: scaleX(0);
+        transition: all .3s ease-in-out;
+    }
+
+    a:hover::before{
+        transform: scaleX(1);
+    }
+}
+
 
 .info-img{
     position: relative;
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.466);
-    animation: imgg 5s infinite;
+    animation: flutuar 5s infinite;
     background-color: #333;
+    user-select: none;
 
     img{
         position: absolute;
-        height: 700px;
-        right: -100px;        
+        top: -40px;
+        height: 650px;
+        right: -100px;      
     }
 }
 
-@keyframes imgg{
+@keyframes flutuar{
     0%{
         transform: translateY(0);
     }
@@ -215,13 +238,13 @@ section.inicio{
 /* -------------------------Seção sobre-------------------- */
 
 section.sobre{
-    height: 100vh;
+    height: 85vh;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 150px;
+    margin-bottom: 20px;
 
     h2{
         font-size: 4em;
@@ -244,12 +267,11 @@ section.sobre{
             font-size: 1em;
             font-family: var(--font2);
             color: aqua;
+            cursor: pointer;
         }
         
     }
 }
-
-
 
 /* -------------------------Seção projetos-------------------- */
 
@@ -259,7 +281,15 @@ section.projetos{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;      
+}
+
+.projetos-cards.active{
+    height: 880px;    
+}
+
+.descricao{
+    width: 100%;
 
     h2{
         font-size: 4em;
@@ -268,59 +298,16 @@ section.projetos{
     }
 
 
-    p.mp{
+    p{
         font-family: var(--font1);
         font-weight: 600;
         font-size: 1.2em;
         margin-bottom: 3em;
-    }        
-}
-
-.descricao{
-    width: 100%;
-}
-
-
-.btn1{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    
-}
-
-
-.btn-vermelho{
-    background-color: red;
-    color: white;
-}
-
-.btn-vermelho:hover{
-    background-color: darkred;
-}
-
-button{
-    position: relative;
-    margin-top: 20px;
-    padding: 15px 20px;
-    border-radius: 10px;
-    background-color: blue;
-    color: white;
-    border: none;
-    font-size: 1.3em;
-    font-family: var(--font2);
-    font-weight: 600;
-    cursor: pointer;
-    transition: all .3s ease-in-out;
-}
-
-button:hover{
-    background-color: darkblue;
+    }  
 }
 
 
 .projetos-cards{
-    position: relative;
     height: 420px;
     overflow: hidden;
     display: grid;
@@ -333,24 +320,32 @@ button:hover{
 
 .card{
     position: relative;
-    box-shadow: 0px 0px 10px 2px var(--color3);
     height: 400px;
     width: 450px;
-    border-radius: 10px;
+    border-radius: 30px;
     overflow: hidden;
     margin: 10px 0px 30px 0px;
-    transition: .3s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
 }
+
+.card img{
+    height: 100%;
+    transition: transform .3s ease-in-out;
+}
+
+.card:hover img{
+    transform: scale(1.2);
+}
+
 
 .overlay{
     width: 100%;
     height: 0;
     background: linear-gradient(transparent,  #1c1c1c);
+    backdrop-filter: blur(10px);
     position: absolute;
     left: 0;
     bottom: 0;
@@ -359,9 +354,11 @@ button:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0px 40px;
+    padding: 0px 30px;
     text-align: center;
     font-size: 1.4em;
+    border-radius: inherit;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.500);
     transition: height .4s ease-in-out;
 
     h3{
@@ -386,7 +383,7 @@ button:hover{
         font-weight: 700;
         border-radius: 10px;
         text-decoration: none;
-        transition: .3s ease-in-out;
+        transition: background .3s ease-in-out;
     }
 
     a:hover{
@@ -396,29 +393,48 @@ button:hover{
 
 .card:hover .overlay{
     height: 100%;
-    backdrop-filter: blur(8px);  
 }
 
-.card img{
+.breve .overlay{
     height: 100%;
-    transition: .3s ease-in-out;
 }
 
 
-.card:hover img{
-    transform: scale(1.2);
+button{
+    margin-top: 20px;
+    padding: 15px 20px;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    font-size: 1.3em;
+    font-family: var(--font2);
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px blue,
+                0px 0px 30px blue;
+    transition: all .3s ease-in-out;
+}
+
+button:hover{
+    background-color: darkblue;
+    box-shadow: 0px 0px 20px blue;
 }
 
 
-.projetos-cards.active{
-    height: 880px;    
+.btn-vermelho{
+    background-color: red;
+    box-shadow: 0px 0px 20px red,
+                0px 0px 30px red;
+    color: white;
 }
 
+.btn-vermelho:hover{
+    background-color: darkred;
+    box-shadow: 0px 0px 20px red;
+}
 
-
-
-
-/* -------------------------Seção Habilidades-------------------- */
+/* ------------------------- Seção Habilidades -------------------- */
 
 
 section.habilidades{
@@ -428,11 +444,13 @@ section.habilidades{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 120px;
+    
 
     h2{
         font-size: 2.5em;
-        font-family: var(--font2);
+        font-family: var(--font1);
+        font-weight: 600;
+        margin-top: 130px;
     }
 }
 
@@ -442,8 +460,8 @@ section.habilidades{
     height: 100%;
     display: grid;
     grid-template-columns: 0fr 0fr 0fr;
-    row-gap: 50px;
-    column-gap: 50px;
+    row-gap: 30px;
+    column-gap: 30px;
     align-content: center;
     justify-content: center;
 }
@@ -452,75 +470,88 @@ section.habilidades{
     display: flex;
     align-items: center;
     flex-direction: column;
-    border: 1px solid white;
+    box-shadow: 0px 0px 2px black;
     height: 300px;
     width: 400px;
     border-radius: 10px;
     overflow: hidden;
 
     span{
-        font-size: 1.4em;
+        font-size: 1.2em;
         font-family: var(--font2);
         font-weight: 300;
-        line-height: 100px;
+        width: 90%;
+        text-align: center;
+        margin-top: 20px;
     }
 }
 
 .card-img-habilidades{
     width: 100%;
-    height: 50%;
-    background-color: var(--color5);
+    height: 40%;
+    background-color: var(--color1);
+    box-shadow: 0px 0px 40px 5px black;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
+      
     img{
-        height: 130px;
-        
+        height: 100px;
+        transition: transform .3s ease-in-out;
+    }
+
+    img:hover{
+        transform: scale(1.1);
     }
 }
 
 
+.adobe img{
+    margin: 0px 10px;
+}
 
-/* -------------------------Seção contatos-------------------- */
+
+/* ------------------------- Seção contatos -------------------- */
 
 section.contato{
-    height: 90vh;
+    height: 65vh;
     color: white;
-    padding-top: 150px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 
     h2{
         font-size: 2.5em;
-        font-family: var(--font2);
-        margin-bottom: 1em;
+        font-weight: 900;
+        font-family: var(--font1);
     }
 }
 
 div.contact{
-    width: 100%;
+    width: 50%;
     height: 400px;
-    box-shadow: 0px 0px 15px 3px var(--color5);
-    border-radius: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 0fr 1fr 0fr;
+    row-gap: 50px;
     justify-items: center;
-    align-content: space-evenly;
+    align-content: center;
 
     a{
         position: relative;
         color: white;
-        font-size: 2em;
+        font-size: 1.5em;
         font-family: var(--font2);
         text-decoration: none;
         font-weight: 500;
-        transition: .3s ease-in-out;
+        transition: all .3s ease-in-out;
         
         i{
+            display: inline;
             margin-right: 15px;
-            color: blue;
-            background-color: var(--color3);
+            color: blueviolet;
             padding: 5px;
         }
 
@@ -530,9 +561,9 @@ div.contact{
         position: absolute;
         content: "";
         width: 100%;
-        height: 2px;
-        background: linear-gradient(to left, aqua, transparent);
-        bottom: -3px;
+        height: 3px;
+        background: linear-gradient(to left, blueviolet, transparent);
+        bottom: -5px;
         transform-origin: left;
         transform: scaleX(0);
         transition: .3s ease-in-out;
@@ -546,10 +577,10 @@ div.contact{
 
 
 
-/* -------------------------Seção rodapé-------------------- */
+/* ------------------------- Seção rodapé -------------------- */
 
 footer{
-    height: 15vh;
+    height: 20vh;
     background-color: black;
     display: flex;
     justify-content: center;
