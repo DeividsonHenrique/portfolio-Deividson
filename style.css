@@ -239,7 +239,7 @@ section.inicio{
 /* -------------------------Seção sobre-------------------- */
 
 section.sobre{
-    height: 85vh;
+    min-height: 85vh;
     color: white;
     display: flex;
     flex-direction: column;

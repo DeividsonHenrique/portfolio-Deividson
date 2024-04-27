@@ -1,3 +1,23 @@
+// botão de ler mais sobre
+
+let buttonLer = document.getElementById('ler-mais')
+
+buttonLer.addEventListener('click', function(){
+    let infoSobre = document.getElementById('info-sobr-ler-mais')
+    infoSobre.classList.toggle('activeLer')
+
+    if(infoSobre.classList.contains('activeLer')){
+        buttonLer.textContent = 'Carregar menos'
+        buttonLer.classList.add('btn-vermelho')
+    }else{
+        buttonLer.textContent = 'Carregar mais'
+        buttonLer.classList.remove('btn-vermelho')  
+    }
+})
+
+
+
+
 // botão de carregar mais projetos
 
 let buttonCards = document.getElementById('carregar-mais')
@@ -58,7 +78,7 @@ const scroll = ScrollReveal ({
 scroll.reveal('header',{delay: 200, origin: 'top'})
 scroll.reveal('.logo',{delay: 200, origin: 'top'})
 scroll.reveal('#inicio',{delay: 200, origin: 'left'})
-scroll.reveal('#sobre',{delay: 200, origin: 'right'})
+// scroll.reveal('#sobre',{delay: 200, origin: 'right'})
 // scroll.reveal('#projetos',{delay: 200, origin: 'left'})
 scroll.reveal('.card-habilidades',{delay: 400, origin: 'bottom'})
 // scroll.reveal('.card',{delay: 400, origin: 'right'})
