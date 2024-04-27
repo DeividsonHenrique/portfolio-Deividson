@@ -56,7 +56,7 @@ const scroll = ScrollReveal ({
 })
 
 scroll.reveal('header',{delay: 200, origin: 'top'})
-scroll.reveal('.logo',{delay: 200, origin: 'left'})
+scroll.reveal('.logo',{delay: 200, origin: 'top'})
 scroll.reveal('#inicio',{delay: 200, origin: 'left'})
 scroll.reveal('#sobre',{delay: 200, origin: 'right'})
 // scroll.reveal('#projetos',{delay: 200, origin: 'left'})
@@ -75,7 +75,7 @@ function mostrarMenu(){
         menuLateral.style.width = '0';
         menuAberto = false;
     } else {
-        menuLateral.style.width = '300px';
+        menuLateral.style.width = '90%';
         menuAberto = true;
     }
 
