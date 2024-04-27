@@ -439,7 +439,7 @@ button:hover{
 
 
 section.habilidades{
-    height: 100vh;
+    min-height: 100vh;
     color: white;
     display: flex;
     flex-direction: column;
@@ -512,6 +512,10 @@ section.habilidades{
 }
 
 
+.btn-habilidades{
+    display: none;
+}
+
 /* ------------------------- Seção contatos -------------------- */
 
 section.contato{
@@ -582,6 +586,7 @@ div.contact{
 
 footer{
     height: 20vh;
+    width: 100%;
     background-color: black;
     display: flex;
     justify-content: center;

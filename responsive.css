@@ -1,7 +1,525 @@
-/* ---------------------------- devices with 1024px between 1200px ---------------------- */
-@media screen and (min-width: 900px) and (max-width: 1023.9px) {
+/* ---------------------------- devices with 414px between 767.9px ---------------------- */
+@media screen and (min-width: 414px) and (max-width: 767.9px) {
+
 
     /* ------------------------- inicio do Header -------------------- */
+
+    header{
+        width: 100%;
+        height: 60px;
+    }
+
+    .logo{
+        text-align: center;
+        a{
+            font-size: 1.1em;
+        }
+    }
+
+    .menu-area-fixo{
+        display: none;
+        width: 70%;
+
+        ul li a{
+            font-size: 1.01em;
+        }
+    }
+
+
+    /* ------------------------- Main -------------------- */
+
+
+    main{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+
+    /* ------------------------- Seção inicio -------------------- */
+
+    section.inicio{
+        height: 100vh;
+        padding-top: 100px;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        span.funcao{
+            font-size: .8em;
+        }
+        
+        h1{
+            font-size: 2em;
+        }
+
+        p{
+            text-align: center;
+            font-size: .9em;
+            line-height: 25px;
+        }
+    }
+
+    .info-contact{
+        justify-content: center;
+        width: 100%;
+        margin-left: 5px;
+
+        a{
+            font-size: .9em;
+            width: 200px;
+
+            i{
+                margin: 0px 5px;
+            }
+        }
+
+    }
+
+    .if1, .if2{
+        margin: 0px 0px;
+        padding: 10px;
+    }
+
+
+
+    .info-img{
+        width: 250px;
+        height: 250px;
+
+        img{
+            height: 450px;
+        }
+    }
+
+    /* -------------------------Seção sobre-------------------- */
+
+    section.sobre{
+        height: 100vh;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+
+        h2{
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+
+        p{
+            font-size: .8em;
+            letter-spacing: 2px;
+            columns: 1;
+            line-height: 30px;
+            font-weight: 500;
+            text-align: justify;
+        }
+    }
+
+    /* -------------------------Seção projetos-------------------- */
+
+
+    .projetos-cards.active{
+        height: 1500px;    
+    }
+
+    .descricao{
+
+        h2{
+            font-size: 2em;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        p{
+            text-align: center;
+            font-size: 1em;
+            font-weight: 500;
+        }
+    }
+
+    .projetos-cards{
+        height: 250px;
+        width: 100%;
+        grid-template-columns: 0fr 0fr;
+        column-gap: 20px;
+        row-gap: 10px;
+    }
+
+    .card{
+        width: 200px;
+        height: 200px;
+        margin-bottom: 0px;
+    }
+
+    .overlay{
+        font-size: 1.1em;
+
+        h3{
+            margin-bottom: 10px;
+        }
+
+        p{
+            margin-bottom: 20px;
+        }
+    }
+
+    button{
+        padding: 5px 10px;
+        font-size: 1em;
+        margin-bottom: 30px;
+    }
+
+
+    /* ------------------------- Seção Habilidades -------------------- */
+
+
+    section.habilidades{
+        h2{
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
+
+    .infos-habilidades.activeH{
+        height: 950px;
+    }
+
+    .infos-habilidades{
+        row-gap: 20px;
+        column-gap: 10px;
+        grid-template-columns: 0fr 0fr;
+        overflow: hidden;
+        align-content: start;
+        height: 310px;
+        transition: height .5s ease-in-out;
+    }
+
+    .card-habilidades{
+        width: 340px;
+        height: 300px;
+
+        span{
+            font-size: 1.2em;
+        }
+    }
+
+    .card-img-habilidades{
+        img{
+            height: 70px;
+        }
+    }
+
+    .adobe img{
+        margin: 0px 10px;
+    }
+
+    .btn-habilidades{
+        display: block;
+    }
+
+    /* ------------------------- Seção contatos -------------------- */
+
+    section.contato{
+        height: 75vh;
+        padding-top: 100px;
+
+        h2{
+            font-size: 1.5em;
+        }
+        
+
+        div.contact{
+            width: 60%;
+            
+
+            a{
+                font-size: 1em;
+            }
+        }
+    }
+
+    /* ------------------------- Seção rodapé -------------------- */
+
+    footer{
+        width: 100%;
+        div{
+            font-size: .85em;
+        }
+    }
+    
+}
+/* --------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+/* ---------------------------- devices with 768px between 899.9px ---------------------- */
+@media screen and (min-width: 768px) and (max-width: 899.9px) {
+
+
+    /* ------------------------- inicio do Header -------------------- */
+
+    header{
+        width: 100%;
+    }
+
+    .logo{
+        width: 10%;
+
+        a{
+            font-size: 1.1em;
+        }
+    }
+
+    .menu-area-fixo{
+        width: 70%;
+
+        ul li a{
+            font-size: 1.01em;
+        }
+    }
+
+
+    /* ------------------------- Main -------------------- */
+
+
+    main{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+    /* ------------------------- Seção inicio -------------------- */
+
+    section.inicio{
+        height: 100vh;
+        padding-top: 100px;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .info{
+
+        span.funcao{
+            font-size: .8em;
+        }
+        
+        h1{
+            font-size: 2em;
+        }
+
+        p{
+            font-size: .9em;
+            line-height: 25px;
+        }
+    }
+
+    .info-contact{
+        justify-content: start;
+        width: 120%;
+        margin-left: -50px;
+
+        a{
+            font-size: .9em;
+            
+        }
+
+    }
+
+
+
+    .info-img{
+        width: 250px;
+        height: 250px;
+
+        img{
+            height: 450px;
+        }
+    }
+
+    /* -------------------------Seção sobre-------------------- */
+
+    section.sobre{
+        height: 100vh;
+        width: 95%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+
+        h2{
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        p{
+            font-size: 1em;
+            letter-spacing: .8px;
+            columns: 2;
+            line-height: 30px;
+            font-weight: 500;
+            text-align: justify;
+        }
+    }
+
+    /* -------------------------Seção projetos-------------------- */
+
+
+    .projetos-cards.active{
+        height: 950px;    
+    }
+
+    .descricao{
+
+        h2{
+            font-size: 2em;
+            margin-top: 50px;
+        }
+
+        p{
+            font-size: 1em;
+            font-weight: 500;
+        }
+    }
+
+    .projetos-cards{
+        height: 320px;
+        width: 100%;
+        grid-template-columns: 0fr 0fr;
+        column-gap: 20px;
+        row-gap: 10px;
+    }
+
+    .card{
+        width: 330px;
+        height: 300px;
+        margin-bottom: 0px;
+    }
+
+    .overlay{
+        font-size: 1.1em;
+
+        h3{
+            margin-bottom: 10px;
+        }
+
+        p{
+            margin-bottom: 20px;
+        }
+    }
+
+    button{
+        padding: 5px 10px;
+        font-size: 1em;
+        margin-bottom: 30px;
+    }
+
+
+    /* ------------------------- Seção Habilidades -------------------- */
+
+
+    section.habilidades{
+        h2{
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
+
+    .infos-habilidades.activeH{
+        height: 950px;
+    }
+
+    .infos-habilidades{
+        row-gap: 20px;
+        column-gap: 10px;
+        grid-template-columns: 0fr 0fr;
+        overflow: hidden;
+        align-content: start;
+        height: 310px;
+        transition: height .5s ease-in-out;
+    }
+
+    .card-habilidades{
+        width: 340px;
+        height: 300px;
+
+        span{
+            font-size: 1.2em;
+        }
+    }
+
+    .card-img-habilidades{
+        img{
+            height: 70px;
+        }
+    }
+
+    .adobe img{
+        margin: 0px 10px;
+    }
+
+    .btn-habilidades{
+        display: block;
+    }
+
+    /* ------------------------- Seção contatos -------------------- */
+
+    section.contato{
+        height: 75vh;
+        padding-top: 100px;
+
+        h2{
+            font-size: 1.5em;
+        }
+        
+
+        div.contact{
+            width: 60%;
+            
+
+            a{
+                font-size: 1em;
+            }
+        }
+    }
+
+    /* ------------------------- Seção rodapé -------------------- */
+
+    footer{
+        width: 100%;
+        div{
+            font-size: .85em;
+        }
+    }
+    
+}
+/* --------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+/* ---------------------------- devices with 900px between 1023.9px ---------------------- */
+@media screen and (min-width: 900px) and (max-width: 1023.9px) {
+
+
+    /* ------------------------- inicio do Header -------------------- */
+
+    header{
+        width: 100%;
+    }
 
     .logo{
         width: 20%;
@@ -25,6 +543,7 @@
 
     main{
         width: 90%;
+        margin: 0 auto;
     }
 
 
@@ -77,6 +596,8 @@
 
     section.sobre{
         height: 100vh;
+        width: 97%;
+        margin: 0 auto;
         justify-content: center;
         align-items: center;
 
@@ -144,7 +665,6 @@
 
 
     section.habilidades{
-
         h2{
             font-size: 2em;
             margin-bottom: 20px;
@@ -157,7 +677,7 @@
     }
 
     .card-habilidades{
-        width: 270px;
+        width: 265px;
         height: 250px;
 
         span{
@@ -194,14 +714,14 @@
     /* ------------------------- Seção rodapé -------------------- */
 
     footer{
-        width: 100vw;
+        width: 100%;
         div{
             font-size: 1em;
         }
     }
     
 }
-
+/* --------------------------------------------------------------------------------------- */
 
 
 
@@ -393,14 +913,14 @@
     /* ------------------------- Seção rodapé -------------------- */
 
     footer{
-        width: 100vw;
+        width: 100%;
         div{
             font-size: 1em;
         }
     }
     
 }
-
+/* --------------------------------------------------------------------------------------- */
 
 
 

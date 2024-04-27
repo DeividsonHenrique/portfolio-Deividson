@@ -19,6 +19,23 @@ buttonCards.addEventListener('click', function(){
 
 })
 
+// botão de carregar mais Habilidades
+
+let buttonCardsHabi = document.getElementById('carregar-habilidades')
+
+buttonCardsHabi.addEventListener('click', function(){
+    let cardsH = document.getElementById('cards-habilidades')
+    cardsH.classList.toggle('activeH')
+
+    if(cardsH.classList.contains('activeH')){
+        buttonCardsHabi.textContent = 'Carregar menos'
+        buttonCardsHabi.classList.add('btn-vermelho')
+    }else{
+        buttonCardsHabi.textContent = 'Carregar mais'
+        buttonCardsHabi.classList.remove('btn-vermelho')  
+    }
+})
+
 
 
 // front End
@@ -42,9 +59,9 @@ scroll.reveal('header',{delay: 200, origin: 'top'})
 scroll.reveal('.logo',{delay: 200, origin: 'left'})
 scroll.reveal('#inicio',{delay: 200, origin: 'left'})
 scroll.reveal('#sobre',{delay: 200, origin: 'right'})
-scroll.reveal('#projetos',{delay: 200, origin: 'left'})
+// scroll.reveal('#projetos',{delay: 200, origin: 'left'})
 scroll.reveal('.card-habilidades',{delay: 400, origin: 'bottom'})
-scroll.reveal('.card',{delay: 400, origin: 'right'})
+// scroll.reveal('.card',{delay: 400, origin: 'right'})
 scroll.reveal('#contatos',{delay: 200});
 
 
