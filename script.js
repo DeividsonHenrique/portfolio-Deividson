@@ -7,11 +7,11 @@ buttonLer.addEventListener('click', function(){
     infoSobre.classList.toggle('activeLer')
 
     if(infoSobre.classList.contains('activeLer')){
-        buttonLer.textContent = 'Carregar menos'
-        buttonLer.classList.add('btn-vermelho')
+        buttonLer.textContent = 'Ler Menos'
+        buttonLer.classList.add('btn-ler-vermelho')
     }else{
-        buttonLer.textContent = 'Carregar mais'
-        buttonLer.classList.remove('btn-vermelho')  
+        buttonLer.textContent = 'Ler Mais'
+        buttonLer.classList.remove('btn-ler-vermelho')  
     }
 })
 
@@ -70,19 +70,18 @@ function si(){
 
 
 const scroll = ScrollReveal ({
-    distance: '50px',
-    duration: 1000,
+    distance: '20px',
+    duration: 500,
     reset: true
 })
 
 scroll.reveal('header',{delay: 200, origin: 'top'})
 scroll.reveal('.logo',{delay: 200, origin: 'top'})
 scroll.reveal('#inicio',{delay: 200, origin: 'left'})
-// scroll.reveal('#sobre',{delay: 200, origin: 'right'})
-// scroll.reveal('#projetos',{delay: 200, origin: 'left'})
-scroll.reveal('.card-habilidades',{delay: 400, origin: 'bottom'})
-// scroll.reveal('.card',{delay: 400, origin: 'right'})
-scroll.reveal('#contatos',{delay: 200});
+scroll.reveal('#sobre',{delay: 200, origin: 'right'})
+scroll.reveal('.card, .descricao',{delay: 200})
+scroll.reveal('.card-habilidades',{delay: 200, origin: 'left'})
+
 
 
 // menu lateral 
@@ -110,11 +109,3 @@ function mostrarMenu(){
     document.addEventListener('click', fecharMenu)
 
 }
-
-
-
-
-
-
-
-

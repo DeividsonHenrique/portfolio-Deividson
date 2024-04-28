@@ -1,5 +1,5 @@
-/* ---------------------------- devices with 414px between 413.9px ---------------------- */
-@media screen and (min-width: 320px) and (max-width: 413.9px) {
+/* ---------------------------- devices with 414px between 459.9px ---------------------- */
+@media screen and (min-width: 320px) and (max-width: 459.9px) {
 
     /* ------------------------- inicio do Header -------------------- */
 
@@ -36,7 +36,7 @@
 
 
     main{
-        width: 95%;
+        width: 96%;
         margin: 0 auto;
     }
 
@@ -75,28 +75,22 @@
 
     .info-contact{
         width: 100%;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        text-align: center;
 
         a{
             font-size: .7em;
-            width: 115px;
+            width: 100%;
 
             i{
-                margin: 0px 5px;
+                margin: 0px 5px 0px -15px;
                 
             }
         }
 
     }
 
-    .if1, .if2{
-        margin: 0px 0px;
-        padding: 10px;
-    }
-
-
-
+    
 
     .info-img{
         width: 200px;
@@ -111,43 +105,81 @@
 
     section.sobre{
         min-height: 100vh;
-        width: 72%;
+        width: 90%;
         justify-content: center;
-        margin: 0 auto;      
+        margin: 0 auto;
     }
 
     div.info-sobre{
+        position: relative;
         width: 100%;
-        height: 60vh;
+        height: 500px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: start;
-        transition: height .5s ease-in-out;
 
         h2{
             text-align: center;
             font-size: 1.6em;
-            margin-bottom: 30px;
+            margin-bottom: 30px;  
         }
 
         p{
-            font-size: .9em;
+            font-size: 15px;
             letter-spacing: 2px;
             columns: 1;
             line-height: 30px;
             font-weight: 600;
-            text-align: center;
+            text-align: justify;
         }
     }
 
+    div.info-sobre::before{
+        position: absolute;
+        content: "";
+        bottom: 0px;
+        height: 120px;
+        width: 100%;
+        background: linear-gradient(transparent, #181818);
+        overflow: hidden;
+        transition: all .3s ease-in-out;
+    }
+
     .info-sobre.activeLer{
-        height: 81em;
+        height: 100%;
+    }
+
+    .info-sobre.activeLer::before{
+        height: 0;
+        visibility: hidden;
     }
 
     .btn-ler{
-        margin-top: 30px;
+        display: block;
+        margin-top: 15px;
+        width: 200px;
+        border: none;
+        color: white;
+        font-size: 1.3em;
+        border-radius: 0px;
+        box-shadow: 0px 0px;
+    }
+
+    .btn-ler:hover{
+        background-color: blue;
+        box-shadow: 0px 0px;
+    }
+
+    .btn-ler-vermelho{
+        background-color: red;
+        box-shadow: 0px 0px;
+    }
+
+    .btn-ler-vermelho:hover{
+        background-color: red;
+        box-shadow: 0px 0px;
     }
     
 
@@ -183,7 +215,7 @@
 
     .card{
         border-radius: 30px;
-        min-width: 97%;
+        min-width: 90%;
         width: 70vw;
         height: 250px;
         margin-bottom: 0px;
@@ -215,6 +247,7 @@
 
 
     section.habilidades{
+
         h2{
             font-size: 1.2em;
             text-align: center;
@@ -223,7 +256,7 @@
     }
 
     .infos-habilidades.activeH{
-        height: 138em;
+        height: 1910px;
     }
 
     .infos-habilidades{
@@ -232,14 +265,14 @@
         grid-template-columns: 0fr;
         overflow: hidden;
         align-content: start;
-        height: 355px;
+        height: 315px;
         transition: height .5s ease-in-out;
     }
 
     .card-habilidades{
-        width: 95vw;
+        width: 80vw;
         border-radius: 20px;
-        height: 340px;
+        height: 300px;
 
         span{
             font-size: 1em;
@@ -277,7 +310,7 @@
             justify-content: center;
 
             a{
-                font-size: .6em;
+                font-size: .75em;
             }
 
             i{
@@ -304,8 +337,8 @@
 
 
 
-/* ---------------------------- devices with 414px between 767.9px ---------------------- */
-@media screen and (min-width: 414px) and (max-width: 767.9px) {
+/* ---------------------------- devices with 460px between 767.9px ---------------------- */
+@media screen and (min-width: 460px) and (max-width: 767.9px) {
 
 
     /* ------------------------- inicio do Header -------------------- */
@@ -414,24 +447,38 @@
 
     section.sobre{
         height: 100vh;
-        width: 80%;
-        margin: 0 auto;
+        width: 90%;
         justify-content: center;
+        margin: 0 auto;
+    }
+
+    div.info-sobre{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
         align-items: center;
+        justify-content: start;
 
         h2{
-            font-size: 1.5em;
+            text-align: center;
+            font-size: 1.6em;
             margin-bottom: 30px;
         }
 
         p{
-            font-size: .8em;
+            font-size: 15px;
             letter-spacing: 2px;
             columns: 1;
             line-height: 30px;
-            font-weight: 500;
+            font-weight: 600;
             text-align: justify;
         }
+    }
+
+
+    .btn-ler{
+        display: none;
     }
 
     /* -------------------------Seção projetos-------------------- */
@@ -693,6 +740,10 @@
         }
     }
 
+    .btn-ler{
+        display: none;
+    }
+
     /* -------------------------Seção projetos-------------------- */
 
 
@@ -934,6 +985,11 @@
         }
     }
 
+
+    .btn-ler{
+        display: none;
+    }
+
     /* -------------------------Seção projetos-------------------- */
 
 
@@ -1138,6 +1194,12 @@
         }
     }
 
+
+    .btn-ler{
+        display: none;
+    }
+
+
     /* -------------------------Seção projetos-------------------- */
 
 
@@ -1328,6 +1390,11 @@
             columns: 3;
             text-align: center;
         }
+    }
+
+
+    .btn-ler{
+        display: none;
     }
 
     /* -------------------------Seção projetos-------------------- */
