@@ -69,6 +69,8 @@ function si(){
 }
 
 
+//efeitos scroll
+
 const scroll = ScrollReveal ({
     distance: '20px',
     duration: 500,
@@ -90,22 +92,29 @@ let menuAberto = false
 
 function mostrarMenu(){
     const menuLateral = document.querySelector('.menu-list')
+    menuLateral.style.width = '100%'
+
     if (menuAberto) {
         menuLateral.style.width = '0';
-        menuAberto = false;
-    } else {
-        menuLateral.style.width = '90%';
         menuAberto = true;
+    } else {
+        menuLateral.style.width = '100%';
+        menuAberto = false;
     }
 
-    function fecharMenu(evento){
+    function fecharMenuX(evento){
         if(menuLateral.contains(evento.target)){
             menuLateral.style.width = '0px'
 
-            document.removeEventListener('click', fecharMenu)
+            document.removeEventListener('click', fecharMenuX)
         }
     }
 
-    document.addEventListener('click', fecharMenu)
+    document.addEventListener('click', fecharMenuX)
 
+}
+
+function fecharMenuX(){
+    const menuLateral = document.querySelector('.menu-list')
+    menuLateral.style.width = '0%'  
 }

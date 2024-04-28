@@ -311,7 +311,8 @@ section.projetos{
         font-family: var(--font1);
         font-weight: 600;
         font-size: 1.2em;
-        margin-bottom: 3em;
+        margin-bottom: 1em;
+        
     }  
 }
 
@@ -630,6 +631,12 @@ footer{
 
 /* ------------ menu lateral --------------- */
 
+.fa-x{
+    width: 50%;
+    transform: scale(1.2);
+    text-align: center;
+    color: var(--color2);
+}
 
 i.fa-bars{
     position: fixed;
@@ -645,10 +652,8 @@ i.fa-bars{
 
 div.menu-list{
     position: fixed;
-    /*background: linear-gradient(to right, transparent, black);
-    backdrop-filter: blur(30px);*/
     height: 100vh;
-    width: 0%;
+    width: 0;
     top: 0px;
     right: 0;
     z-index: 1;
@@ -657,14 +662,14 @@ div.menu-list{
 
     nav{
         width: 100%;
-        height: 70%;
+        height: 90%;
         display: flex;
-        justify-content: center;
+        justify-content: end;
         align-items: center;
 
         ul{
             list-style: none;
-            width: 100%;
+            width: 80%;
             text-align: center;
 
             li{
@@ -684,12 +689,25 @@ div.menu-list{
 }
 
 
-div.menu-list::before{
+div.menu-list::before, div.menu-list::after{
     position: absolute;
     content: "";
-    width: 100%;
+    top: 0;
+    right: 0;
+    width: 80%;
     height: 100vh;
-    filter: blur(10px);
+    background: black;
+    box-shadow: 0px 5px 20px black;
     backdrop-filter: blur(10px);
+    filter: blur(10px);
     z-index: -1;
+    opacity: .95;
+}
+
+
+div.menu-list::after{
+    left: 0;
+    width: 20%;
+    background: black;
+    opacity: .4;
 }
