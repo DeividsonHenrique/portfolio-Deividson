@@ -216,9 +216,9 @@ section.inicio{
 
     img{
         position: absolute;
-        top: -40px;
-        height: 650px;
-        right: -100px;      
+        top: -280px;
+        height: 1000px;
+        right: -170px;      
     }
 }
 
@@ -463,6 +463,7 @@ section.habilidades{
         font-family: var(--font1);
         font-weight: 600;
         margin-top: 130px;
+        padding-bottom: 20px;
     }
 }
 
