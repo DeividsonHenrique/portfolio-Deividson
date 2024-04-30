@@ -1,6 +1,6 @@
 ﻿﻿﻿<h2 align="center">Portfólio</h2>
 
-<p align="center">Meu primeiro portfólio criado depois de muitas praticas e estudos para ter uma boa noção quais consitos seriam aplicados nele, algumas das coisas que usei foram implementadas de ultima hora como animções scroll para não ficar um site tão estático. usei alguns conhecimentos que achei relevante como um botão eu poderia esconder mais informções para que não fique tantos conteudos na tela, os projetos de uma forma mais interativa ao passar o mouse sobre e clicar para saber mais</p>
+<p align="center">Meu primeiro portfólio criado depois de muitas praticas e estudos para ter uma boa noção quais conceitos seriam aplicados nele. Algumas das coisas que usei foram implementadas de ultima hora como animações scrolls para não ficar um site tão estático. usei alguns conhecimentos que achei relevante como um botão eu poderia esconder mais informções para que não ficasse tantos conteudos na tela, os projetos de uma forma mais interativa ao passar o mouse sobre eles e clicar para saber mais. E muitas das ideia foram com base em varios portfolios que vi pela internet e decidi criar um do meu jeito!</p>
 
 <a href="https://deividsonhenrique.github.io/portfolio-Deividson/" target="_blank">Link do Portifólio</a>
 
